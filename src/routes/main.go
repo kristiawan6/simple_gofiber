@@ -8,7 +8,7 @@ import (
 
 func Router(c *fiber.App) {
 
-	 v1 := c.Group("/api/v1")
+	v1 := c.Group("/api/v1")
 
 	month := v1.Group("/month")
 	{
