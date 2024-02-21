@@ -10,7 +10,7 @@ import (
 var DB *gorm.DB
 
 func InitDB() {
-	url := "postgres://tjryujji:5vllCYGk1i33xU7e3ZdF_ecGCnOGYm-N@topsy.db.elephantsql.com:5432/tjryujji"
+	url := "DATABASE_URL"
 	// url := os.Getenv("URL") 
 	var err error
 	DB, err = gorm.Open(postgres.Open(url), &gorm.Config{})
